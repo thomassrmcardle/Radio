@@ -1,5 +1,6 @@
 
 import random
+import string
 import time
 
 import variate
@@ -24,14 +25,7 @@ def pickRandom(data):
     return data[num]
 
 def IsDecade(string):
-    try:
-        asNum = int(string)
-        if asNum:
-            return True
-        else:
-            return False
-    except:
-        return False
+    return string.isdigit()
 
 index = 0
 def GetOptionMsg(option):
