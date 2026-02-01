@@ -6,12 +6,12 @@ def GetUTC():
 
 def GetIndexPath():
     basePath = fileManager.GetBaseDirectory("sequencing")
+    fileManager.forcePathExists(basePath)
     filePath = fileManager.formatPath(basePath + "/indexTrack.txt")
     return filePath
 
 def CheckIndex(cur):
     filePath = GetIndexPath()
-    fileManager.forcePathExists(filePath)
     try:
         file = open(filePath,'r')
         playing = file.read()
@@ -26,7 +26,6 @@ def CheckIndex(cur):
 def SetIndex():
     cur = GetUTC()
     filePath = GetIndexPath()
-    fileManager.forcePathExists(filePath)
     file = open(filePath,'w')
     file.write(cur)
     file.close()
