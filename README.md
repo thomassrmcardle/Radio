@@ -6,7 +6,8 @@ The system is free to use, so if you fancy having a look, feel free and I hope y
 
 **Requirements**
 ---
-- Must have Spotify Premium (unfortunately this is a limitation due to the APIs and there isn't a work around)
+- Windows OS
+- Spotify Premium (unfortunately this is a limitation due to the APIs and there isn't a known work around)
 
 **Planned Additions**
 ---
